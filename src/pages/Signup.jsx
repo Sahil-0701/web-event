@@ -50,7 +50,7 @@ const Signup = () => {
     <div className="min-h-[90vh] flex justify-center items-center px-4 py-12">
       <div className="w-full max-w-md px-8 py-10 bg-white rounded-2xl shadow-2xl border border-gray-100">
         <h2 className="text-4xl font-bold text-center text-indigo-600 mb-2">
-          Create Account ✨
+          Create Account
         </h2>
         <p className="text-center text-gray-500 mb-8">
           Join the trueEvents community today!
@@ -129,7 +129,7 @@ const Signup = () => {
                 <FaSpinner className="animate-spin mr-2" /> Creating Account...
               </span>
             ) : (
-              "Sign Up 💖"
+              "Sign Up"
             )}
           </button>
         </form>

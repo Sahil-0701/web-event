@@ -28,6 +28,34 @@ const About = () => {
     },
   ];
 
+  const profiles = [
+    {
+      imageSrc: "/sahil.jpg",
+      name: "Sahil",
+      position: "Everything",
+    },
+    {
+      imageSrc: "/sahil.jpg",
+      name: "Sahil",
+      position: "Everything",
+    },
+    {
+      imageSrc: "/sahil.jpg",
+      name: "Sahil",
+      position: "Everything",
+    },
+    {
+      imageSrc: "/sahil.jpg",
+      name: "sahil",
+      position: "Frontend Developer",
+    },
+    {
+      imageSrc: "/sahil.jpg",
+      name: "sahil",
+      position: "Backend Engineer",
+    },
+  ];
+
   return (
     <div className="space-y-10 px-4">
       <div>
@@ -124,9 +152,12 @@ const About = () => {
             ))}
           </div>
         </div>
+
+       
+        </div>
       </div>
-    </div>
+    
   );
 };
 
-export default About;
+export default About;

@@ -37,7 +37,7 @@ const Signin = () => {
   return (
     <div className="min-h-[90vh] flex items-center justify-center  px-4 py-8">
       <div className="w-full max-w-md bg-white rounded-2xl shadow-xl p-10 border border-gray-200">
-        <h2 className="text-4xl font-bold text-indigo-600 mb-2 text-center">Welcome Back 💫</h2>
+        <h2 className="text-4xl font-bold text-indigo-600 mb-2 text-center">Welcome Back</h2>
         <p className="text-gray-500 mb-6 text-center">Log in to your trueEvents account</p>
 
         {error && (
@@ -81,7 +81,7 @@ const Signin = () => {
             className="w-full py-3 bg-indigo-500 hover:bg-indigo-600 text-white font-semibold rounded-xl transition disabled:opacity-50 disabled:cursor-not-allowed"
           >
             {loading ? <FaSpinner className="animate-spin inline mr-2" /> : null}
-            {loading ? "Signing In..." : "Sign In 🚀"}
+            {loading ? "Signing In..." : "Sign In"}
           </button>
         </form>
 

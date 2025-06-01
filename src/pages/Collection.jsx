@@ -5,14 +5,23 @@ import { EventContext } from "../context/EventContext";
 import EventCardSkeleton from "../components/EventCardSkeleton";
 
 const sortOptions = ["Price: Low to High", "Price: High to Low"];
-const eventTypeOptions = ["concert", "conference", "workshop", "meetup"];
+const eventTypeOptions = [
+  "outdoor",
+  "indoor",
+  "national",
+  "international",
+  "inter-college",
+  "inter-state",
+];
 
 const sortEventsByPrice = (events, sortOrder) => {
   if (!sortOrder) return events;
 
   return [...events].sort((a, b) => {
-    if (sortOrder === "Price: Low to High") return a.ticketPrice - b.ticketPrice;
-    if (sortOrder === "Price: High to Low") return b.ticketPrice - a.ticketPrice;
+    if (sortOrder === "Price: Low to High")
+      return a.ticketPrice - b.ticketPrice;
+    if (sortOrder === "Price: High to Low")
+      return b.ticketPrice - a.ticketPrice;
     return 0;
   });
 };
